@@ -11,3 +11,4 @@ while True:
     data, addr = sock.recvfrom(1024) # buffer size is 1024 bytes
     data = math.factorial(int(data))
     sock.sendto(str(data),addr)
+    print "Message: ", data
